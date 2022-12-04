@@ -10,7 +10,11 @@ ruleTester.run('get', rules.get, {
         }
     ],
     invalid: [
-
+        {
+            name: "body is empty",
+            code: "function getName(){}",
+            errors: [{ message: "getName must return a value" }]
+        }
 
     ]
 })

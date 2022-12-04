@@ -6,7 +6,7 @@
 - 用户可以自行配置是否 fix
 
 
-## DO
+## BASE ENV
 
 eslint-plugin-xxx:  插件命名规范
 
@@ -84,4 +84,12 @@ watch 模式, 利用 mocha 测试库
 ```shell
 pnpm test -- --watch
 ```
+
+
+
+## FINISH
+
+对于一个eslint来说，对 ast 分析 ，从信息里面提取出需要的东西，检测是否符合要求
+
+![](assets/2022-12-04-19-41-12.png)
 
