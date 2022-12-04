@@ -78,3 +78,10 @@ ruleTester.run('get', rules.get, {
 
 
 ```
+
+watch 模式, 利用 mocha 测试库
+
+```shell
+pnpm test -- --watch
+```
+
