@@ -7,7 +7,10 @@ ruleTester.run('get', rules.get, {
         {
             name: 'success',
             code: `function getName(){ return ''}`
-        }
+        }, {
+            name: 'success',
+            code: `function setName(){ }`
+        },
     ],
     invalid: [
         {
