@@ -19,6 +19,62 @@ pnpm init -y
 pnpm i eslint -D
 pnpx eslint --init
 ```
-![](cli.png)
+![](./assets/cli.png)
 
-### 2. 单元测试
+配置 .eslintrc.js
+
+```js
+module.exports = {
+    "root": true,
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "plugins": [
+        "reviewget"
+    ],
+    "rules": {
+        "reviewget/get": ["warn"]
+    }
+}
+
+```
+
+在`eslint-plugin-reviewget/example`下安装本地写好的插件
+
+```shell
+pnpm i ../
+```
+
+![](./assets/lint-run.png)
+
+### 2. 单元测试环境
+
+创建`reviewget.spec.js`文件
+
+```js
+const { RuleTester } = require("eslint")
+const { rules } = require('./index')
+
+const ruleTester = new RuleTester()
+ruleTester.run('get', rules.get, {
+    valid: [
+        {
+            name: 'success',
+            code: `function getName(){ return ''}`
+        }
+    ],
+    invalid: [
+
+
+    ]
+})
+
+
+```

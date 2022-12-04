@@ -1,4 +1,5 @@
 module.exports = {
+    "root": true,
     "env": {
         "browser": true,
         "commonjs": true,
@@ -9,6 +10,10 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": "latest"
     },
+    "plugins": [
+        "reviewget"
+    ],
     "rules": {
+        "reviewget/get": ["warn"]
     }
 }

@@ -6,8 +6,8 @@ module.exports = {
              */
             create() {
                 console.log('init eslint plugin')
+                return {}
             },
-
         }
     }
 }

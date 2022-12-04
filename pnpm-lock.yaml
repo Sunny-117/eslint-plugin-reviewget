@@ -2,10 +2,6 @@ lockfileVersion: 5.3
 
 specifiers:
   eslint: ^8.29.0
-  eslint-plugin-reviewget: link:..
-
-dependencies:
-  eslint-plugin-reviewget: link:..
 
 devDependencies:
   eslint: registry.npmmirror.com/eslint/8.29.0
