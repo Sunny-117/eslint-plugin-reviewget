@@ -8,7 +8,9 @@ module.exports = {
              * api
              */
             create(context) {
-                console.log('init eslint plugin')
+                // console.log('init eslint plugin')
+                const isFix = context.options[0]
+
                 return {
                     FunctionDeclaration(node) {
                         // console.log(node)// 获取到ast中body里面是否有值
@@ -23,7 +25,10 @@ module.exports = {
                                 node,
                                 message: `${functionName} must return a value`,
                                 fix(fixer) {
-                                    return fixer.replaceTextRange([node.range[1] - 1, node.range[1]], "return ''}")
+                                    if (isFix === false) return fixer.insertTextAfter(node, '')// 相当于没有处理
+                                    const endPoint = node.range[1]
+
+                                    return fixer.replaceTextRange([endPoint - 1, endPoint], `return ''}`)
                                     // return {
                                     //     range:[],
                                     //     text: ""

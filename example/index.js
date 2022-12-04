@@ -1,5 +1,8 @@
-function getName() {
+function getNotFixName() {
 }
 
+function getName() {
+
+}
 
 function setName() { }

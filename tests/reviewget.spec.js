@@ -25,7 +25,14 @@ ruleTester.run('get', rules.get, {
             output: "function getName(){var name = 'demo';return ''}",
             errors: [{ message: "getName must return a value" }]
 
-        }
+        },
+        {
+            name: "no fix",
+            code: "function getNotFixName(){}",
+            output: "function getNotFixName(){}",
+            options: [false],
+            errors: [{ message: "getNotFixName must return a value" }]
+        },
 
     ]
 })

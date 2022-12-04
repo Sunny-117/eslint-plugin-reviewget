@@ -14,6 +14,7 @@ module.exports = {
         "reviewget"
     ],
     "rules": {
+        // "reviewget/get": ["warn", false]
         "reviewget/get": ["warn"]
     }
 }
