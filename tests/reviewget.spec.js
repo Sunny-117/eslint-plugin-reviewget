@@ -14,6 +14,12 @@ ruleTester.run('get', rules.get, {
             name: "body is empty",
             code: "function getName(){}",
             errors: [{ message: "getName must return a value" }]
+        },
+        {
+            name: "body is not empty",
+            code: "function getName(){let name = 'demo'}",
+            errors: [{ message: "getName must return a value" }]
+
         }
 
     ]
