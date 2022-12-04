@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-reviewget",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "## Feature - 当用户使用 getXXX  get开头的函数的时候  如果不返回值的话 那么就会报错 - 可以 fix - 用户可以自行配置是否 fix",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.91chi.fun/https://github.com/Sunny-117/eslint-plugin-reviewget.git"
+    "url": "https://github.com/Sunny-117/eslint-plugin-reviewget.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "sunny-117",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.29.0",

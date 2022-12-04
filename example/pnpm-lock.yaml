@@ -2,13 +2,11 @@ lockfileVersion: 5.3
 
 specifiers:
   eslint: ^8.29.0
-  eslint-plugin-reviewget: link:..
-
-dependencies:
-  eslint-plugin-reviewget: link:..
+  eslint-plugin-reviewget: ^0.0.1
 
 devDependencies:
   eslint: registry.npmmirror.com/eslint/8.29.0
+  eslint-plugin-reviewget: registry.npmmirror.com/eslint-plugin-reviewget/0.0.1
 
 packages:
 
@@ -234,6 +232,12 @@ packages:
     name: escape-string-regexp
     version: 4.0.0
     engines: {node: '>=10'}
+    dev: true
+
+  registry.npmmirror.com/eslint-plugin-reviewget/0.0.1:
+    resolution: {integrity: sha512-PgvOEhcxqu4vyCaAKIzYiVJ3WXVmiRiIR5GyLl4jH4pbDypLfgJntv4UvbC98va2ZxY3ZPhMs57uFuaRh6P1Iw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-plugin-reviewget/-/eslint-plugin-reviewget-0.0.1.tgz}
+    name: eslint-plugin-reviewget
+    version: 0.0.1
     dev: true
 
   registry.npmmirror.com/eslint-scope/7.1.1:

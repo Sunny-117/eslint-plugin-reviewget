@@ -110,6 +110,33 @@ pnpm test -- --watch
 
 
 
+# 发包
+
+先打包，发包的时候使用打包结果
+
+```json
+// package.json 
+"files": [
+    "index.js",
+    "package.json"
+],
+// 表示发布上去的文件
+```
+
+```shell
+npm login --registry https://registry.npmjs.org 
+npm publish --registry https://registry.npmjs.org 
+```
+
+在example里面直接install
+
+```json
+// 删除
+ "dependencies": {
+    "eslint-plugin-reviewget": "link:.."
+  }
+```
+
 
 
 
