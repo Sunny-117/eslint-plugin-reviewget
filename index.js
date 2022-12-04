@@ -13,20 +13,20 @@ module.exports = {
                         const blockStatementBody = node.body.body
 
                         const lastNode = blockStatementBody[blockStatementBody.length - 1]
-                        if (lastNode && lastNode.type !== 'ReturnStatement') {
+                        if (!lastNode || lastNode.type !== 'ReturnStatement') {
                             context.report({
                                 node,
                                 message: `${functionName} must return a value`
                             })
-                            return
+                            // return
                         }
 
-                        if (blockStatementBody.length === 0) {
-                            context.report({
-                                node,
-                                message: `${functionName} must return a value`
-                            })
-                        }
+                        // if (blockStatementBody.length === 0) {
+                        //     context.report({
+                        //         node,
+                        //         message: `${functionName} must return a value`
+                        //     })
+                        // }
                     }
                 }
             },
