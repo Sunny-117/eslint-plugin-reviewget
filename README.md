@@ -141,3 +141,6 @@ npm publish --registry https://registry.npmjs.org
 
 
 问题：vscode保存时候自动完成eslint补全
+
+
+参考项目：https://github.com/cuixiaorui/tutorial-eslint-plugin
