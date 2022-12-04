@@ -11,7 +11,7 @@
 - 用户可以自行配置是否 fix
 
 
-## BASE ENV
+## Base Environment
 
 eslint-plugin-xxx:  插件命名规范
 
@@ -92,7 +92,7 @@ pnpm test -- --watch
 
 
 
-## FINISH
+## Finish
 
 对于一个eslint来说，对 ast 分析 ，从信息里面提取出需要的东西，检测是否符合要求
 
@@ -107,10 +107,7 @@ pnpm test -- --watch
 
 
 
-
-
-
-# 发包
+# Publish
 
 先打包，发包的时候使用打包结果
 
@@ -139,8 +136,11 @@ npm publish --registry https://registry.npmjs.org
 
 
 
+# Problem
 
-问题：vscode保存时候自动完成eslint补全
+vscode保存时候自动完成eslint补全
 
 
-参考项目：https://github.com/cuixiaorui/tutorial-eslint-plugin
+# Reference
+
+[eslint-plugin](https://github.com/cuixiaorui/tutorial-eslint-plugin)
