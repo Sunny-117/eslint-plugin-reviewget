@@ -23,7 +23,7 @@ module.exports = {
                                 node,
                                 message: `${functionName} must return a value`,
                                 fix(fixer) {
-                                    return fixer.replaceText(node, '1233')
+                                    return fixer.replaceTextRange([node.range[1] - 1, node.range[1]], "return ''}")
                                     // return {
                                     //     range:[],
                                     //     text: ""
