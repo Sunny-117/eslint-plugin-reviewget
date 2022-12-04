@@ -16,6 +16,7 @@ ruleTester.run('get', rules.get, {
         {
             name: "body is empty",
             code: "function getName(){}",
+            output: "function getName(){return ''}",// 被fix之后的结果
             errors: [{ message: "getName must return a value" }]
         },
         {

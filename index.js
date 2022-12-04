@@ -1,6 +1,9 @@
 module.exports = {
     rules: {
         get: {
+            meta: {
+                fixable: 'code'
+            },
             /**
              * api
              */
@@ -18,7 +21,14 @@ module.exports = {
                         if (!lastNode || lastNode.type !== 'ReturnStatement') {
                             context.report({
                                 node,
-                                message: `${functionName} must return a value`
+                                message: `${functionName} must return a value`,
+                                fix(fixer) {
+                                    return fixer.replaceText(node, '1233')
+                                    // return {
+                                    //     range:[],
+                                    //     text: ""
+                                    // }
+                                }
                             })
                             // return
                         }

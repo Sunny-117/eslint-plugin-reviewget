@@ -1,5 +1,10 @@
 # eslint-plugin-reviewget
 
+
+> 开发思路参考：git commit
+
+
+
 ## Feature
 - 当用户使用 getXXX  get开头的函数的时候  如果不返回值的话 那么就会报错
 - 可以 fix
@@ -95,4 +100,17 @@ pnpm test -- --watch
 
 
 
-开发思路参考：git commit
+
+开发完成插件后，在example中进行使用之前，需要进行如下操作：
+
+![](assets/2022-12-04-19-57-32.png)
+
+
+
+
+
+
+
+
+
+问题：vscode保存时候自动完成eslint补全

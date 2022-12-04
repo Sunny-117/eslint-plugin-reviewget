@@ -1,2 +1,5 @@
 function getName() {
 }
+
+
+function setName() { }
